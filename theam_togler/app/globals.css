@@ -1,0 +1,30 @@
+/* Light Theme (default) */
+:root {
+  --bg-color: #ffffff;
+  --text-color: #000000;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+  --bg-color: #121212;
+  --text-color: #ffffff;
+}
+
+/* Apply background & text */
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  transition: background 0.25s ease, color 0.25s ease;
+}
+
+/* Button styling */
+.btn {
+  padding: 10px 20px;
+  border: 1px solid var(--text-color);
+  background: none;
+  color: var(--text-color);
+  border-radius: 6px;
+  cursor: pointer;
+}
