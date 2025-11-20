@@ -1,0 +1,34 @@
+:root {
+  --bg: #ffffff;
+  --text: #111;
+  --panel: #f3f3f3;
+}
+
+[data-theme="dark"] {
+  --bg: #0c0c0e;
+  --text: #eaeaea;
+  --panel: #1c1c1f;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, sans-serif;
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+button {
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #8882;
+  background: none;
+  color: var(--text);
+}
+
+.panel {
+  background: var(--panel);
+  padding: 16px;
+  border-radius: 8px;
+}
